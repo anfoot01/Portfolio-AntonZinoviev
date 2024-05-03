@@ -1,0 +1,58 @@
+// ===== GRID SETTINGS =====
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+}
+.col-5 {
+    width: 20%;
+    padding: 0 10px 10px;
+    @include mobile {
+        width: 100%;
+    }
+}
+.col-4 {
+    width: 25%;
+    padding: 0 10px 10px;
+    @include mobile {
+        width: 100%;
+    }
+}
+.col-3 {
+    width: 33.33%;
+    padding: 0 10px 10px;
+    @include mobile {
+        width: 100%;
+    }
+}
+.col-25 {
+    width: 40%;
+    padding: 0 10px 10px;
+    @include mobile {
+        width: 100%;
+    }
+}
+.col-2 {
+    width: 50%;
+    padding: 0 10px 10px;
+    @include mobile {
+        width: 100%;
+    }
+}
+.col-2m {
+    width: 50%;
+    padding: 0 10px 10px;
+}
+.col-23 {
+    width: 66.66%;
+    padding: 0 10px 10px;
+
+    @include mobile {
+        width: 100%;
+    }
+}
+.col-1 {
+    width: 100%;
+    padding: 0 10px 10px;
+}

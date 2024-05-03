@@ -1,0 +1,86 @@
+.header {
+	display: flex;
+	gap: 607px;
+	align-items: center;
+	margin-inline: auto;
+	padding-top: 20px;
+    &__logo{ 
+		font-size: 24px;
+		color: var(--c-text-white);
+	}
+	&__a{
+		font-size: 18px;
+		color: var(--c-text-white);
+	}
+	&__backdrop {
+		background: rgba(0, 0, 0, 0.8);
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		transform: translateX(120%);
+		display: none;
+		transition: var(--transition);
+		opacity: 0;
+
+		@include tablet {
+			display: block;
+		}
+
+		&._active {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+
+	&__ul {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		z-index: 9;
+
+		@include tablet {
+			z-index: 9;
+			position: fixed;
+			width: 70%;
+			height: 100%;
+			flex-direction: column;
+			left: 0;
+			top: 0;
+			background: #45d2ca;
+			align-items: center;
+			justify-content: center;
+			transform: translateX(-120%);
+			transition: var(--transition);
+		}
+
+		&._active {
+			transform: translateX(0);
+		}
+
+		.icon-close {
+			position: absolute;
+			top: 40px;
+			right: 40px;
+			color: var(--c-text-white);
+		}
+	}
+
+	&__a {
+		@include tablet {
+			color: var(--c-text-white);
+		}
+	}
+}
+
+.icon-menu,
+.icon-close {
+	cursor: pointer;
+	display: none;
+    color: var(--c-text-white);
+	@include tablet {
+		display: inline-block;
+	}
+}
