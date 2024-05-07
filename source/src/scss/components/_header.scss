@@ -1,15 +1,18 @@
 .header {
 	display: flex;
-	gap: 607px;
+	gap: 607rem;
 	align-items: center;
 	margin-inline: auto;
-	padding-top: 20px;
+	padding-top: 20rem;
+	@include tablet {
+		gap: 307rem;
+	}
     &__logo{ 
-		font-size: 24px;
+		font-size: 24rem;
 		color: var(--c-text-white);
 	}
 	&__a{
-		font-size: 18px;
+		font-size: 18rem;
 		color: var(--c-text-white);
 	}
 	&__backdrop {
@@ -38,9 +41,10 @@
 	&__ul {
 		display: flex;
 		align-items: center;
-		gap: 20px;
+		justify-content: center;
+		gap: 20rem;
 		z-index: 9;
-
+    
 		@include tablet {
 			z-index: 9;
 			position: fixed;
@@ -51,7 +55,7 @@
 			top: 0;
 			background: #45d2ca;
 			align-items: center;
-			justify-content: center;
+			
 			transform: translateX(-120%);
 			transition: var(--transition);
 		}
@@ -62,8 +66,8 @@
 
 		.icon-close {
 			position: absolute;
-			top: 40px;
-			right: 40px;
+			top: 40rem;
+			right: 40rem;
 			color: var(--c-text-white);
 		}
 	}

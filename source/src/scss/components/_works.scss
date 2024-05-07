@@ -2,6 +2,7 @@
     padding: 40px 0;
 
     &__main-title {
+        font-size: 24rem;
         color: #45d2ca;
         margin-inline: auto;
         text-align: center;
@@ -25,24 +26,29 @@
     }
 
     &__list {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        display: flex;
+        gap: 30rem;
         align-items: center;
         max-width: 1210px;
         margin: auto;
         margin-bottom: 70px;
+        @include tablet{
+            flex-direction: column;
+        }
     }
 
     &__item {
         display: inline-block;
         box-sizing: border-box;
-        width: 30%;
         margin: 15px;
         border-radius: 10px;
-        min-width: 370px;
-        min-height: 349px;
+        max-width: 370px;
         box-shadow: 0 0 10px 2.5px #45d2ca;
         border-radius: 15px;
+        
+        @include tablet{
+            max-width: 250px;
+        }
     }
 
     &__image {
@@ -61,5 +67,6 @@
         letter-spacing: -0.5px;
         text-align: left;
         padding: 15px 0 0 20px;
+        padding: 30rem;
     }
 }

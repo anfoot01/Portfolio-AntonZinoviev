@@ -1,8 +1,8 @@
 .welcome {
-    padding: 96px 0;
+    padding: 96rem 0;
 
     &__info {
-        max-width: 466px;
+        max-width: 466rem;
 
         @include tablet {
             max-width: 100%;
@@ -12,10 +12,10 @@
 
     &__mark {
         color: var(--c-text-white);
-        font-size: 19px;
+        font-size: 19rem;
         font-weight: 500;
-        line-height: 27px;
-        margin-bottom: 24px;
+        line-height: 27rem;
+        margin-bottom: 24rem;
         span{
             color: #45d2ca;
         }
@@ -23,40 +23,41 @@
 
     &__title {
         color: var(--c-text-white);
-        font-size: 42px;
+        font-size: 42rem;
         font-weight: 700;
-        line-height: 64px;
-        margin-bottom: 8px;
+        line-height: 64rem;
+        margin-bottom: 8rem;
     }
 
     &__desc {
         color: var(--c-text-white);
-        font-size: 16px;
+        font-size: 16rem;
         font-weight: 400;
-        line-height: 27px;
-        max-width: 461px;
-        margin-bottom: 24px;
+        line-height: 27rem;
+        max-width: 461rem;
+        margin-bottom: 24rem;
 
         @include tablet {
             margin-inline: auto;
-            margin-bottom: 44px;
+            margin-bottom: 44rem;
         }
     }
     &__btn{
-        padding: 7px 20px;
-        border-radius: 10px;
+        font-size: 20rem;
+        padding: 7rem 20rem;
+        border-radius: 10rem;
         background: #45d2ca;
         color: var(--c-text-white);
-        box-shadow: 0 0 5px 2.5px #45d2ca;
+        box-shadow: 0 0 5rem 2.5rem #45d2ca;
     }
 
     &__container {
         display: flex;
-        gap: 199px;
+        gap: 199rem;
         align-items: center;
         @include tablet {
             flex-direction: column;
-            gap: 80px;
+            gap: 80rem;
         }
     }
 
@@ -68,8 +69,8 @@
     }
     &__img-img{
         border-radius: 50%;
-        max-width: 400px;
-        max-height: 400px;
+        max-width: 400rem;
+        max-height: 400rem;
     }
    
 }

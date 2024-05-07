@@ -1,6 +1,18 @@
 html, body {
 	height: 100%;
 }
+html{
+	font-size: 1px;
+	@include tablet {
+		font-size: 0.8px;
+	}
+	@include tablet-small{
+		font-size: 0.7px;
+	}
+	@include mobile{
+		font-size: 0.7px;
+	}
+}
 body {
 	font-family: var(--ff);
 	display: grid;
