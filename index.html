@@ -16,19 +16,23 @@
 
 <body>
 	<header class="header">
+	<div class="header__container">
+
+	
 	<div class="header__logo">Portfolio.</div>
 	<div class="header__nav">
 		<div class="header__backdrop" id="headerBackdrop" onclick="navToggle()"></div>
 		<ul class="header__ul" id="headerUl">
-			<li class="header__li"><a class="header__a" href="/">About</a></li>
-			<li class="header__li"><a class="header__a" href="/">Education</a></li>
-			<li class="header__li"><a class="header__a" href="/">Skills</a></li>
-			<li class="header__li"><a class="header__a" href="/">Works</a></li>
-			<li class="header__li"><a class="header__a" href="/">Contact</a></li>
+			<li class="header__li"><a class="header__a" href="#about">About</a></li>
+			<li class="header__li"><a class="header__a" href="#education">Education</a></li>
+			<li class="header__li"><a class="header__a" href="#skills">Skills</a></li>
+			<li class="header__li"><a class="header__a" href="#works">Works</a></li>
+			<li class="header__li"><a class="header__a" href="#blog">Contact</a></li>
 			<span class="material-icons icon-close" onclick="navToggle()">close</span>
 		</ul>
 		<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
 	</div>
+</div>
 </header>
 
 	<section id="welcome" class="welcome">
@@ -64,7 +68,7 @@
     </div>
     
 </section>
-	<section id="about" class="about ">
+	<section id="education" class="about ">
     <h1 class="about__main-title">EDUCATION</h1>
     <div class="about__container">
         <div class="about__info">
@@ -243,7 +247,7 @@
     </div>
     
 </section>
-	<section class="works">
+	<section class="works" id="works">
     <h1 class="works__main-title">Works</h1>
     <div class="works__container">
         <div class="works__list">
