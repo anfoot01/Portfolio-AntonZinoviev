@@ -1,5 +1,5 @@
 .about {
-    padding: 40px 0;
+    padding: 40rem 0;
     &__main-title{
         font-size: 24rem;
         margin-bottom: 30rem;
@@ -16,10 +16,14 @@
         margin-bottom: 70rem;
         max-width: 628rem;
         color: var(--c-text-white);
+        @include mobile{
+            max-width: 300px;
+            margin-inline: auto;
+        }
     }
 
     &__container {
-        max-width: 1100rem;
+        max-width: 1300px;
         margin-inline: auto;
         display: flex;
         
@@ -54,6 +58,10 @@
         max-width: 450rem;
         border: 10rem solid  #45d2ca;
         border-radius: 50%;
+        transition: all .3s ease-in-out;
+       
+    }
+    &__image:hover{
         box-shadow: 0 0 10rem 2.5rem #45d2ca;
     }
     &__btn {
@@ -94,6 +102,7 @@
         margin-inline: auto;
     }
 }
+
 
 .image img {
     border-radius: inherit;

@@ -1,6 +1,7 @@
 .skills {
     padding: 40rem 0;
-    &__main-title{
+
+    &__main-title {
         font-size: 24rem;
         color: #45d2ca;
         margin-inline: auto;
@@ -12,6 +13,7 @@
         box-shadow: 0 0 10rem 2.5rem #45d2ca;
         margin-bottom: 52rem;
     }
+
     &__desc {
         margin-bottom: 40rem;
         max-width: 628rem;
@@ -21,12 +23,12 @@
     }
 
     &__container {
-        max-width: 1100rem;
+        max-width: 1300px;
         margin-inline: auto;
         display: flex;
-        
         gap: 130rem;
         justify-content: center;
+
         @include tablet {
             flex-direction: column;
             gap: 80rem;
@@ -39,47 +41,25 @@
         text-align: center;
         margin-bottom: 32rem;
         color: var(--c-text-white);
-      
+
         span {
             color: #45d2ca;
         }
     }
 
     &__info {
-       font-size: 16rem;
-       margin-inline: center;
-       background: #9dd4d2;
-       padding: 30rem 100rem;
-       border-radius: 30rem;
-       box-shadow: 0 0 20rem 4rem #45d2ca;
+        font-size: 16rem;
+        margin-inline: center;
+        background: #9dd4d2;
+        padding: 30rem 100rem;
+        border-radius: 30rem;
+        transition: all .3s ease-in-out;
         @include tablet {
             text-align: center;
             max-width: 360rem;
         }
-
-       
     }
-    &__image{
-        max-width: 450rem;
-        border: 10rem solid  #45d2ca;
-        border-radius: 50%;
-        box-shadow: 0 0 10rem 2.5rem #45d2ca;
+    &__info:hover{
+        box-shadow: 0 0 20rem 4rem #45d2ca;
     }
-    &__btn {
-        color: var(--c-text-white);
-
-        @include tablet {
-            margin-bottom: 32rem;
-        }
-    }
-
-    @include tablet {
-        padding-bottom: 68rem;
-    }
-
-    @include mobile {
-        padding: 68rem;
-    }
-    
-
 }

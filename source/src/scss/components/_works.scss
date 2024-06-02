@@ -1,72 +1,78 @@
 .works {
-    padding: 40px 0;
-
+    padding: 40rem 0; 
+    &__container{
+        max-width: 1300px;
+        margin-inline: auto;
+    }
     &__main-title {
         font-size: 24rem;
         color: #45d2ca;
         margin-inline: auto;
         text-align: center;
-        max-width: 240px;
-        border: 2px solid #45d2ca;
-        padding: 10px 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px 2.5px #45d2ca;
-        margin-bottom: 52px;
+        max-width: 240rem;
+        border: 2rem solid #45d2ca;
+        padding: 10rem 20rem;
+        border-radius: 10rem;
+        box-shadow: 0 0 10rem 2.5rem #45d2ca;
+        margin-bottom: 52rem;
     }
 
     &__title {
         color: rgb(92, 98, 236);
-        font-size: 60px;
+        font-size: 60rem;
         font-weight: 700;
         line-height: 130%;
-        letter-spacing: -0.5px;
+        letter-spacing: -0.5rem;
         text-align: center;
-        margin-top: 60px;
-        margin-bottom: 60px;
+        margin-top: 60rem;
+        margin-bottom: 60rem;
     }
 
     &__list {
-        display: flex;
-        gap: 30rem;
-        align-items: center;
-        max-width: 1210px;
-        margin: auto;
-        margin-bottom: 70px;
-        @include tablet{
-            flex-direction: column;
+        margin-top: 50rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 350px);
+        gap: 60rem;
+        justify-content: center;
+        margin-inline: auto;
+        @include mobile {
+            margin-top: 30rem;
+            gap: 40rem;
+            grid-template-columns: repeat(auto-fill, 235px);
         }
     }
 
     &__item {
-        display: inline-block;
-        box-sizing: border-box;
-        margin: 15px;
-        border-radius: 10px;
-        max-width: 370px;
-        box-shadow: 0 0 10px 2.5px #45d2ca;
-        border-radius: 15px;
-        
-        @include tablet{
-            max-width: 250px;
+        margin: 15rem;
+        border-radius: 16rem;
+        border: 2rem solid #45d2ca;
+        transition: all .3s ease-in-out;
+        width: 350rem;
+        @include mobile {
+            width: 300rem;
         }
     }
-
+    &__item:hover{
+        box-shadow: 0 0 10rem 2.5rem #45d2ca;
+        border-radius: 15rem;
+    }
     &__image {
         cursor: pointer;
 
         img {
-            border-radius: 15px;
+            border-radius: 15rem;
+            height: 180rem;
+            width: 100%;
         }
     }
 
     &__desc {
         color: var(--c-text-white);
-        font-size: 24px;
+        font-size: 24rem;
         font-weight: 700;
         line-height: 130%;
-        letter-spacing: -0.5px;
+        letter-spacing: -0.5rem;
         text-align: left;
-        padding: 15px 0 0 20px;
-        padding: 30rem;
+        padding: 25rem;
     }
 }

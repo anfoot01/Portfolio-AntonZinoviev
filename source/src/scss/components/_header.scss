@@ -1,15 +1,16 @@
 .header {
-	display: flex;
-	gap: 607rem;
-	align-items: center;
-	margin-inline: auto;
-	padding-top: 20rem;
-	@include tablet {
-		gap: 307rem;
+	padding: 40rem 40rem 0 40rem;
+	&__container{
+		display: flex;
+		justify-content: space-between;
+		max-width: 1300px;
+		align-items: center;
+		margin-inline: auto;
 	}
     &__logo{ 
 		font-size: 24rem;
 		color: var(--c-text-white);
+		cursor: pointer;
 	}
 	&__a{
 		font-size: 18rem;
@@ -55,7 +56,6 @@
 			top: 0;
 			background: #45d2ca;
 			align-items: center;
-			
 			transform: translateX(-120%);
 			transition: var(--transition);
 		}

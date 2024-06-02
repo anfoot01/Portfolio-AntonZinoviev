@@ -2,9 +2,9 @@
     padding: 96rem 0;
 
     &__info {
-        max-width: 466rem;
-
+        max-width: 561rem;
         @include tablet {
+            max-width: 361rem;
             max-width: 100%;
             text-align: center;
         }
@@ -34,12 +34,13 @@
         font-size: 16rem;
         font-weight: 400;
         line-height: 27rem;
-        max-width: 461rem;
+        max-width: 561rem;
         margin-bottom: 24rem;
 
         @include tablet {
             margin-inline: auto;
             margin-bottom: 44rem;
+            max-width: 361rem;
         }
     }
     &__btn{
@@ -48,12 +49,17 @@
         border-radius: 10rem;
         background: #45d2ca;
         color: var(--c-text-white);
+        transition: all .3s ease-in-out;
+        
+    }
+    &__btn:hover{
         box-shadow: 0 0 5rem 2.5rem #45d2ca;
     }
 
     &__container {
         display: flex;
-        gap: 199rem;
+        max-width: 1300px;
+        justify-content: space-between;
         align-items: center;
         @include tablet {
             flex-direction: column;
@@ -69,8 +75,12 @@
     }
     &__img-img{
         border-radius: 50%;
-        max-width: 400rem;
+        max-width: 600rem;
+        max-height: 600rem;
+        @include tablet {
+            max-width: 400rem;
         max-height: 400rem;
+        }
     }
    
 }
