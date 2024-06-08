@@ -1,6 +1,9 @@
 .skills {
     padding: 40rem 0;
-
+    .desc{
+        display: flex;
+        flex-direction: column;
+    }
     &__main-title {
         font-size: 24rem;
         color: #45d2ca;
@@ -15,6 +18,9 @@
     }
 
     &__desc {
+        display: flex;
+        flex-direction: column;
+        gap: 20rem;
         margin-bottom: 40rem;
         max-width: 628rem;
         color: var(--c-text-white);
@@ -41,7 +47,7 @@
         text-align: center;
         margin-bottom: 32rem;
         color: var(--c-text-white);
-
+        margin: 30rem 0 40rem 0;
         span {
             color: #45d2ca;
         }

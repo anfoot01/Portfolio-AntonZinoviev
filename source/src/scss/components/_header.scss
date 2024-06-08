@@ -15,6 +15,9 @@
 	&__a{
 		font-size: 18rem;
 		color: var(--c-text-white);
+		@include tablet{
+			font-size: 24px;
+		}
 	}
 	&__backdrop {
 		background: rgba(0, 0, 0, 0.8);
@@ -45,7 +48,7 @@
 		justify-content: center;
 		gap: 20rem;
 		z-index: 9;
-    
+     
 		@include tablet {
 			z-index: 9;
 			position: fixed;
@@ -58,6 +61,7 @@
 			align-items: center;
 			transform: translateX(-120%);
 			transition: var(--transition);
+			gap: 40px;
 		}
 
 		&._active {
